@@ -34,47 +34,6 @@ User.init(
             validate: {
                 len: [6]
             }
-        },
-        credit_card_number: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-            unique: true,
-            validate: {
-                isCreditCard: true
-            }
-        },
-        cc_expiration_date: {
-            type: DataTypes.DATE,
-            allowNull: true,
-            validate: {
-                isDate: true
-            }
-        },
-        cc_code: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-            validate: {
-                len: [3]
-            }
-        },
-        address_one: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
-        address_two: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
-        city: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
-        zip: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-            validate: {
-                len: [5]
-            }
         }
     },
     {
